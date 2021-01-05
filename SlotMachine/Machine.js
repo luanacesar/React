@@ -1,26 +1,31 @@
-function getSelection()
-{
-    return Math.floor(Math.random(Machine) * s1 *s2 *s3);
-}
+// function getSelection()
+// {
+ 
+
+//     return Math.floor(Math.random());
+// }
 
 class Machine extends React.Component{
     render(){
-        const icon = getSelection();
+        let props = this.props;
         let msg;
-        if (icon === s1){  
-            msg= 
-            <div>     
-               <h2>CONGRATS YOU WIN! {}</h2>  
-           </div>
-            } else {
-                icon = <h2>Sorry you lose!</h2>
+
+        if(this.props.s1 == props.s2 && props.s2 == props.s3)
+        {
+            msg = <h2>YOU WIN!</h2>  
+        } else 
+        {
+                msg = <h2>you lose!</h2>
         }
-        return (
+        return(
             <div>
-                <h1>Slot Machines!</h1>
-           
+                <p>{this.props.s1} {this.props.s2} {this.props.s3}</p>
+                {msg} 
+
             </div>
-        )
+        );
     }
 }
+
+
 
