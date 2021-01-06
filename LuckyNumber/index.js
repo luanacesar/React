@@ -12,6 +12,8 @@ class App extends React.Component {
             bangs={4}
             />
             <NumPicker/>
+            <Hello 
+            />
         </div>
         )
     
