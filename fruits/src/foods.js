@@ -1,10 +1,5 @@
-function fruit(){
-
-pick_fruit = ["🍇","🍈","🍉","🍊",
+const foods = ["🍇","🍈","🍉","🍊",
 "🍋","🍌","🍍","🍎","🍏","🍐","🍒","🍓",
 "🥝","🥑"];
 
-
-}
-
-export default fruit;
+export default foods;

@@ -1,14 +1,14 @@
-import fruit from './foods';
+function choice(itens){
 
-function choice(){
-    
- Math.floor(Math.random() * fruit.length);
-
-console.log()
-}
-function remove(){
-    console.log('REMOVE');
+let item = Math.floor(Math.random() * itens.length)
+return itens[item];
 }
 
-export default choice;
+function remove(itens, item){
+    for(let i=0; i< itens.length; i++){
+        if(itens[i] === item){
+            return [... itens.slice(0,i), ...itens.slice(i+1)];
+        }
+    }
+}
 export {choice, remove}; 
