@@ -1,18 +1,11 @@
-import { choice, remove } from './helpers';
+import choice from './helpers';
 import foods from './foods';
 
+ let fr = choice(foods);
 
-let fruit = choice(foods);
+        console.log(fr);
 
-console.log('Id like one' + {fruit} + ', please.');
+        console.log('Id like one:', {fr});
 
-console.log('Here you go:' + {fruit} + ', please.');
-
-remove(foods,fruit);
-
-
- 
-
-
-
+        console.log('Here you go:', {fr} ,"please.");
 
