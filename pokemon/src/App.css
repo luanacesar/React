@@ -36,11 +36,10 @@
     transform: rotate(360deg);
   }
 }
-
-.pokedex-style{
-  background-color: whitesmoke;
-  text-align: center;
-  border: #282c34 1px;
-  color: gray;
-  padding: 10px 10px;
+.podedexx{
+background-color: white;
+text-align: center;
+border: #282c34 1px;
+color: gray;
+padding: 10px 10px;
 }
