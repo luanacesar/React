@@ -16,10 +16,6 @@ class Pokecard extends Component{
                      <div> Exp: {this.props.exp} </div>
             </div>
 
-        //    <ul>
-        //        {cards.map( c => <li> {c.text}
-        //        </li>)}
-        //    </ul>
         );
     }
 }
