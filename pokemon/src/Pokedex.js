@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Pokecard from './Pokecard';
 import './Pokedex.css'
-
+Df877qww
 
 class Pokedex extends Component{
     static defaultProps = {
@@ -17,11 +17,6 @@ class Pokedex extends Component{
           ]
     }
     render(){
-       
-        //    <ul>
-        //        {cards.map( c => <li> {c.text}
-        //        </li>)}
-        //    </ul>
         return(
             <div className="Pokedex">
                 <h1>Pokedex</h1>
