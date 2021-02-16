@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Pokecard from './Pokecard';
 import './Pokedex.css'
-Df877qww
-
-class Pokedex extends Component{
+class Pokedex extends Component {
     static defaultProps = {
          pokemons : [
             {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -15,7 +13,7 @@ class Pokedex extends Component{
             {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
             {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
           ]
-    }
+    };
     render(){
         return(
             <div className="Pokedex">
