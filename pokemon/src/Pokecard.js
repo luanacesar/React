@@ -7,14 +7,14 @@ const poke_API = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/';
 
 class Pokecard extends Component{
     render(){
-        const id = this.props.id;
+       
         let imgPoke;
-        if (id <= 10) {
-             imgPoke = poke_API + '00' + id + '.png';
+        if (this.props.id <= 10) {
+             imgPoke = poke_API + '00' + this.props.id + '.png';
         } else if (this.props.id > 10 && this.props.id < 100) {
-             imgPoke = poke_API + '0' + id + '.png';
+             imgPoke = poke_API + '0' + this.props.id + '.png';
         } else {
-             imgPoke = poke_API + id + '.png';
+             imgPoke = poke_API + this.props.id + '.png';
         }
             return(
             <div className="Pokecard">
